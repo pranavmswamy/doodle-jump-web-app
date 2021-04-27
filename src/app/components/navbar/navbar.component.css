@@ -12,5 +12,12 @@ ul {
   li a {
     display: block;
     padding: 8px;
-    background-color: #dddddd;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+
+  h1 {
+    color: rgb(1, 80, 1);
   }
