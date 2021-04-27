@@ -1,27 +1,88 @@
 <div class="nes-container">
     <!-- <p class="title">DOODLE JUMP</p> -->
+    <h1> DOODLE JUMP </h1>
+    <ul>
+        <li><h4> <a href="#DoodleJumpGame">Doodle Jump Game</a></h4></li>
+        <li><h4> <a href="#Goal">Goal</a></h4></li>
+    </ul>
     <div class="row">
         <div class="col-md-8">
-            <h1> DOODLE JUMP </h1>
-            <p>Doodle Jump is a platforming video game developed and published by American studio Lima Sky. The initial release of the game was in April 2009.
-                In Doodle Jump, the aim is to guide a four-legged creature called "The Doodler" up a never-ending series of platforms without falling.
-                Players can get a short boost from various objects, such as propeller hats, jetpacks, rockets, springs, trampolines.
-                <br> <br>
+            <h4 id="DoodleJumpGame"> Doodle Jump Game</h4>
+            <p>A platforming video game developed and published by American studio Lima Sky. <br/> <br/>
+                Aim is to guide a four-legged creature called "The Doodler" up a never-ending series of platforms without falling. <br/> <br/>
+                Players can get boost from various objects, such as propeller hats, jetpacks, rockets, springs, trampolines.
+            </p>
+            <br/>  <br/>  <br/>  <br/> <br/>  <br/>
+            <h4 id="Trailer"> Game Video </h4>
+            <iframe width="700" height="406" 
+                src="https://www.youtube.com/embed/syVMW5i3OPU" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <br/>  <br/>  <br/>  <br/> <br/>  <br/>
+            <h4 id="Goal"> Goal </h4>
+            <p>
+            Build an AI player model that interacts with the game and allows the doodler to climb up the platforms. <br/> <br/>
+            Explore a combination of computer vision and reinforcement learning agents like DQN, DRQN, PPO and A3C. <br/> <br/>
+            Attack the model using Adversarial Attack
+            </p>
+            <br/>  <br/>  <br/>  <br/> <br/>  <br/>
             
-            <h4> Reinforcement Learning </h4>
+            <h4 id="HyperparameterTuning"> Hyperparameter Tuning </h4>
+           <ul>
+               <li>Reward Type Comparison</li>
+               <p> Reward Type 4 is chosen</p>
+               <br/> <br/> 
+               <li>Learning Rate Comparison</li>
+               <br/> <br/> 
+               <li>Gamma Comparison</li>
+               <br/> <br/> 
+               <li>Max memory/Batch Size Comparison</li>
+           </ul>
+            
+            <br/>  <br/>  <br/>  <br/> <br/>  <br/>
+            <h4 id="Models"> Models Used </h4>
+            <ul>
+                <li>Deep Q-Network (DQN)</li>
+                <img src="assets/dqn.png" width="700" height="300"/>
+                <p>Best performing DQN results</p>
+                <p>Mean Reward   -0.90079 <br>
+                     High Score  18700 <br>
+                      Mean Score  2055.7</p>
+                <br/> <br/> <br/>
+                <li>Deep Recurrent Q-Network (DRQN)</li>
+                <img src="assets/hyperparamter1.png" width="600" height="300"/>
+                <br/> <br/> <br/>
+                <li></li>
+                <img src="assets/hyperparamter1.png" width="600" height="300"/>
+                <br/> <br/> <br/>
+                <li></li>
+                <img src="assets/hyperparamter1.png" width="600" height="300"/>
+                <br/> <br/> <br/>
+            </ul>
+            
+            <br/>  <br/>  <br/>  <br/> <br/>  <br/>
+            <h4 id="Models"> Advanced Improvements </h4>
+            <ul>
+                <li> <h5>Incorporated Exploration vs Exploitation </h5></li>
+                <p>  Epsilon Greedy with Fixed Epsilon <br>
+                    Epsilon Greedy with Exponential Epsilon <br>
+                    Epsilon Greedy with Exponential Curve Epsilon <br>
+                </p>
+                <li> <h5>Added Feature Extractors </h5></li>
+                <p>  resnet18 <br>
+                    mnasnet <br>
+                    Epsilon Greedy with Exponential Curve Epsilon <br>
+                </p>
 
-            Our goal to build a AI player model that interacts with the game and allows the doodler to climb up the platforms.
-            We wish to explore a combination of computer vision and reinforcement learning agents like DQN, PPO and A3C.
-            <div class="lists">
-                <p> Challenges: </p>
-                <ul class="nes-list is-disc">
-                <li>Dynamicity of environment (moving and breakable platforms, and random rewards).</li> <br>
-                <li>The game is not episodic in nature (not consistently repetitive).</li> <br>
-                <li>Game environment is not exposed to us via APIs, so we need to use external libraries to interact with the game.</li>
-                </ul>
-            </div>
-
-            <h4> Adversarial Attack </h4>
+                <li> <h5>Attacked our models using Adversarial Attack</h5></li>
+                <p> 
+                </p>
+            </ul>
+            <br/>  <br/>  <br/>  <br/> <br/>  <br/>  
+            <!-- <h4> Adversarial Attack </h4>
                 Adversarial attacking is a machine learning technique that attempts to fool models by supplying deceptive input that looks similar to the human eye.
             This part of our project is mainly to look into possibilities of eliminating players using game bots to deceive Anti-cheat engines.  
             Our goal is to research on building a neural network that would manipulate the input image sent to reinforcement learning system to confuse the game bot.
@@ -30,10 +91,11 @@
                 <ul class="nes-list is-disc">
                 <li>This topic is still in continuous research in the academia, especially for reinforcement learning systems.</li> <br>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <div class="col-md-4">
             <img src="https://cdn-0.idownloadblog.com/wp-content/uploads/2019/08/Doodle-Jump-Gameplay-e1564717442453.jpg">
+            <!-- <img src="assets/img1.png"> -->
         </div>
     </div>
 </div>
