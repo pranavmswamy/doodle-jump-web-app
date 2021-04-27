@@ -1,12 +1,17 @@
 <div class="nes-container">
-    <!-- <p class="title">DOODLE JUMP</p> -->
-    <app-navbar></app-navbar>
+    
+    <app-navbar> </app-navbar>
+
     <h4>Machine Learning for Games</h4>
     <h4> University of Southern California, Spring 2021</h4>
     
     <ul style="margin-top: 2%;">
-        <li><h4> <a class="nes-text is-success" href="#DoodleJumpGame">Doodle Jump Game</a></h4></li>
-        <li><h4> <a class="nes-text is-success" href="#Goal">Goal</a></h4></li>
+        <li><h4> <a  class="nes-text is-success" href="#Video">Game Video</a></h4></li>
+        <li><h4> <a  class="nes-text is-success" href="#Goal">Goal</a></h4></li>
+        <li><h4> <a  class="nes-text is-success" href="#HyperparameterTuning">Hyperparameter Tuning</a></h4></li>
+        <li><h4> <a  class="nes-text is-success" href="#Models">Models Used</a></h4></li>
+        <li><h4> <a  class="nes-text is-success" href="#AdvancedImprovements">Advanced Improvements</a></h4></li>
+
     </ul>
     <div class="row">
         <div class="col-md-8">
@@ -15,10 +20,11 @@
                 Aim is to guide a four-legged creature called "The Doodler" up a never-ending series of platforms without falling. <br/> <br/>
                 Players can get boost from various objects, such as propeller hats, jetpacks, rockets, springs, trampolines.
             </p>
-            <br/>  <br/>
-            <h4 id="Trailer"> Game Video </h4>
-            <iframe width="700" height="406" 
-                src="https://www.youtube.com/embed/syVMW5i3OPU" 
+            <br/>  <br/>  <br/>  <br/> <br/>  <br/>
+            <h4 id="Video"> Game Video </h4>
+            <iframe width="700" 
+                height="406" 
+                src="https://www.youtube.com/embed/Zi5XisAxvgw" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -36,7 +42,6 @@
             <h4 id="HyperparameterTuning"> Hyperparameter Tuning </h4>
            <ul>
                <li>Reward Type Comparison</li>
-               <p> Reward Type 4 is chosen</p>
                <br/> <br/> 
                <li>Learning Rate Comparison</li>
                <br/> <br/> 
@@ -51,23 +56,35 @@
                 <li>Deep Q-Network (DQN)</li>
                 <img src="assets/dqn.png" width="700" height="300"/>
                 <p>Best performing DQN results</p>
-                <p>Mean Reward   -0.90079 <br>
-                     High Score  18700 <br>
-                      Mean Score  2055.7</p>
+                <p>Mean Reward   -0.91053 <br>
+                     High Score  11800 <br>
+                      Mean Score  2854.2</p>
                 <br/> <br/> <br/>
-                <li>Deep Recurrent Q-Network (DRQN)</li>
-                <img src="assets/hyperparamter1.png" width="600" height="300"/>
+                <li>Deep Recurrent Q-Network (DQN)</li>
+                <img src="assets/drqn.png" width="700" height="300"/>
+                <p>Best performing DRQN results</p>
+                <p>Mean Reward   -0.89775 <br>
+                     High Score  21100 <br>
+                      Mean Score  2079.7</p>
                 <br/> <br/> <br/>
-                <li></li>
-                <img src="assets/hyperparamter1.png" width="600" height="300"/>
+                <li>Proximal Policy Optimization (PPO)</li>
+                <img src="assets/ppo.png" width="700" height="300"/>
+                <p>Best performing PPO results</p>
+                <p>Mean Reward   -0.00034340 <br>
+                     High Score  9400 <br>
+                      Mean Score  1841.3</p>
                 <br/> <br/> <br/>
-                <li></li>
-                <img src="assets/hyperparamter1.png" width="600" height="300"/>
+                <li>Advantage Actor Critic (A2C)</li>
+                <img src="assets/ppo.png" width="700" height="300"/>
+                <p>Best performing A2C results</p>
+                <p>Mean Reward   0.0000 <br>
+                     High Score  11600 <br>
+                      Mean Score  2742.1</p>
                 <br/> <br/> <br/>
             </ul>
             
             <br/>  <br/>  <br/>  <br/> <br/>  <br/>
-            <h4 id="Models"> Advanced Improvements </h4>
+            <h4 id="AdvancedImprovements"> Advanced Improvements </h4>
             <ul>
                 <li> <h5>Incorporated Exploration vs Exploitation </h5></li>
                 <p>  Epsilon Greedy with Fixed Epsilon <br>
@@ -77,11 +94,12 @@
                 <li> <h5>Added Feature Extractors </h5></li>
                 <p>  resnet18 <br>
                     mnasnet <br>
-                    Epsilon Greedy with Exponential Curve Epsilon <br>
+                    mobilenet <br>
                 </p>
 
                 <li> <h5>Attacked our models using Adversarial Attack</h5></li>
                 <p> 
+                    Performed white-box FGSM attack on the model
                 </p>
             </ul>
             <br/>  <br/>  <br/>  <br/> <br/>  <br/>  
